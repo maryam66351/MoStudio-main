@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Abril';
+    src: url('/public/fonts/AbrilFatface-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppinscustom';
+    src: url('/public/fonts/Poppins.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppinsmedium';
+    src: url('/public/fonts/Poppins Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+

@@ -1,0 +1,395 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* =================== */
+
+.togg-btn {
+    display: none;
+}
+
+.imgfill {
+    background: url('/public/images/bg_1.jpg.webp') no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.yline-before::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 2px;
+    height: 40px;
+    background-color: #f3c623;
+}
+
+.yline-after::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 2px;
+    height: 40px;
+    background-color: #f3c623;
+}
+
+.hlinebottom {
+    position: relative;
+}
+
+.hlinebottom:hover {
+    color: #f3c623;
+}
+
+.hlinebottom::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background-color: #f3c623;
+    transform: translateX(-50%);
+    transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hlinebottom:hover::before {
+    width: 100%;
+}
+
+.active {
+    color: #f3c623;
+}
+
+.active::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 100%;
+    height: 3px;
+    background-color: #f3c623;
+    transform: translateX(-50%);
+    transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+/* =======================Media Queries=========================== */
+
+@media screen and (max-width: 1350px) {
+    .c_mainpage {
+        margin-left: 330px;
+    }
+
+    .c_Sidebar {
+        width: 330px;
+    }
+
+    .c_gallery {
+        margin-left: 330px;
+    }
+
+    .c_about {
+        margin-left: 330px;
+    }
+
+    .c_pricing {
+        margin-left: 330px;
+    }
+
+    .c_contact {
+        margin-left: 330px;
+        width: calc(100% - 330px);
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .portrait_div {
+        padding-left: 3vw;
+    }
+
+    .portrait_divL {
+        padding-right: 3vw;
+    }
+
+    .portrait_div h2,
+    .portrait_divL h2 {
+        font-size: 3vw;
+    }
+
+    .cabout_inerdiv {
+        padding-left: 3vw;
+    }
+
+    .cabout_inerdiv>h2 {
+        font-size: 2.5vw;
+        line-height: 3vw;
+    }
+
+    .cabout_inerdiv img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .cContact_1st {
+        padding-left: 2vw;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .cContact_2st_inner {
+        flex-direction: column;
+    }
+
+
+
+}
+
+@media screen and (max-width: 968px) {
+    .c_Sidebar {
+        width: 320px;
+    }
+    .c_Sidebar h1{
+        font-size: 50px;
+    }
+
+    .trtoggle {
+        left: 0;
+    }
+
+    .ftoggle {
+        left: -400px;
+    }
+
+    .c_mainpage {
+        margin-left: 0;
+    }
+
+    .portrait_div h2,
+    .portrait_divL h2 {
+        font-size: 4.4vw;
+    }
+
+    .portrait_div,
+    .portrait_divL {
+        padding-left: 7vw;
+    }
+
+    .portrait_div p:nth-last-child(2),
+    .portrait_divL p:nth-last-child(2) {
+        font-size: 2vw;
+        width: 100%;
+        line-height: 3vw;
+    }
+
+    .c_gallery {
+        margin-left: 0px;
+    }
+
+    .c_about {
+        margin-left: 0px;
+    }
+
+    .c_pricing {
+        margin-left: 0px;
+    }
+
+    .cabout_inerdiv {
+        padding-left: 5vw;
+    }
+
+    .cabout_inerdiv>h2 {
+        font-size: 3.8vw;
+        line-height: 4vw;
+    }
+
+    .cabout_inerdiv img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .cabout_inerdiv>p {
+        width: 80%;
+        line-height: 2.5vw;
+    }
+
+    .c_contact {
+        margin-left: 0px;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .cContact_1st {
+        width: 370px;
+        padding-left: 3vw;
+    }
+
+    .togg-btn {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .cgallery-innerdiv {
+        display: block;
+        text-align: center;
+    }
+
+    .cabout_inerdiv img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .cpricinginner {
+        min-width: 50%;
+    }
+
+    .c_contact {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .cContact_1st {
+        width: 100%;
+        padding-left: 40px;
+    }
+
+    .cContact_2st {
+        width: 100%;
+        height: 100vh;
+    }
+    .rmpadding{
+        padding-left: 0;
+    }
+.portrait_div h2, .portrait_divL h2{
+line-height: 5vw;
+
+}
+}
+
+@media screen and (max-width: 645px) {
+
+    .portrait_div span,
+    .portrait_divL span {
+        font-size: 2vw;
+    }
+
+    .portrait_div a,
+    .portrait_divL a {
+        margin-top: 3vw;
+    }
+
+    .yline-after::after {
+        height: 20px;
+    }
+
+    .yline-before::before {
+        height: 20px;
+    }
+
+    .portrait_div p:nth-last-child(2),
+    .portrait_divL p:nth-last-child(2) {
+        padding-left: 3vw;
+    }
+
+    .aboutFdiv {
+        flex-direction: column;
+    }
+
+    .about_imgdiv,
+    .cabout_inerdiv {
+        width: 100%;
+    }
+
+    .cabout_inerdiv {
+        padding-left: 0;
+    }
+
+    .cabout_inerdiv>h2 {
+        font-size: 7vw;
+        line-height: 7.7vw;
+        text-align: center;
+    }
+
+    .cabout_inerdiv>p {
+        text-align: center;
+        width: 80%;
+        margin: 3vw auto;
+        font-size: 2.3vw;
+        line-height: 3vw;
+    }
+
+    .cabout_inerdiv img {
+        margin-top: 100px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .cpricinginner {
+        min-width: 100%;
+    }
+
+    .main_innerDiv {
+        flex-direction: column;
+    }
+
+    .main_innerDiv div {
+        width: 100%;
+    }
+
+    .main_innerDiv div h2 {
+        font-size: 7vw;
+    }
+
+    .main_innerDiv div p:nth-last-child(2) {
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+
+    .portrait_divL {
+        padding-right: 7vw;
+    }
+
+    .portrait_divL p:nth-last-child(2) {
+        padding-right: 3.5vw;
+    }
+
+    .portrait_div>p,
+    .portrait_divL>p {
+        font-size: 3vw;
+    }
+
+    .C_load {
+        padding: 10px 0;
+    }
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .cabout_inerdiv img {
+        margin-top: 50px;
+        width: 80px;
+        height: 80px;
+    }
+
+
+}
+
+@media screen and (max-width: 380px) {
+    .c_Sidebar {
+        width: 320px;
+    }
+}
